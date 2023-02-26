@@ -7,6 +7,7 @@ import { Cat } from '../models/Cat.model';
   styleUrls: ['./kitten-card.component.css']
 })
 export class KittenCardComponent {
+  displayInfo = false
 @Input() Cat!: Cat ;
 @Input() displayBtnAdoptCat = false;
 @Output() sendToAdoptedList: EventEmitter<Cat> = new EventEmitter;

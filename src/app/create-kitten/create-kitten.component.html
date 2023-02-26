@@ -1,5 +1,6 @@
 <p>create-kitten works!</p>
-<form (ngSubmit)="createNewCat()">
+<form (ngSubmit)="createNewCat()" #catForm="ngForm">
+
   <div>
     <label for="name">nom : </label>
     <input
@@ -40,5 +41,5 @@
       required
     />
   </div>
-  <button type="submit">creer le chat</button>
+  <button type="submit" [ngStyle]="{backgroundColor : catForm.valid ? 'green' : 'red'}">creer le chat</button>
 </form>
