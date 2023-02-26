@@ -1,0 +1,9 @@
+<h2>liste de chats :</h2>
+<div class="cats-container">
+  <app-kitten-card
+    *ngFor="let Cat of catsToAdopt"
+    [Cat]="Cat"
+    (sendToAdoptedList)="sendCatToAdoptedList($event)"
+  >
+  </app-kitten-card>
+</div>
