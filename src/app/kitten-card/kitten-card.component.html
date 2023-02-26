@@ -1,5 +1,5 @@
 <div class="cat-container"><p>{{Cat.name}}</p>
   <img  [src]="Cat.imgcat" alt="image de chat">
   <p>{{Cat.birth | date : "dd/MM/YYYY"}}</p>
-  <p>{{Cat.race}}</p> <button (click)="addCatToAdoptedList()">Adopter</button></div>
+  <p>{{Cat.race}}</p> <button *ngIf="displayBtnAdoptCat" (click)="addCatToAdoptedList()">Adopter</button></div>
  

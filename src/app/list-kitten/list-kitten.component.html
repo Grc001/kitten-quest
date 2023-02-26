@@ -4,6 +4,7 @@
     *ngFor="let Cat of catsToAdopt"
     [Cat]="Cat"
     (sendToAdoptedList)="sendCatToAdoptedList($event)"
+    [displayBtnAdoptCat]="displayBtnAdoptMe"
   >
   </app-kitten-card>
 </div>

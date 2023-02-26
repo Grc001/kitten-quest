@@ -7,7 +7,7 @@ import { Cat } from '../models/Cat.model';
   styleUrls: ['./list-kitten.component.css']
 })
 export class ListKittenComponent {
-
+displayBtnAdoptMe = true;
   @Input() catsToAdopt : Cat[] = [];
   @Output() addCatAdopted : EventEmitter<Cat>  = new EventEmitter();
   sendCatToAdoptedList(event : Cat){

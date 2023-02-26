@@ -8,6 +8,7 @@ import { Cat } from '../models/Cat.model';
 })
 export class KittenCardComponent {
 @Input() Cat!: Cat ;
+@Input() displayBtnAdoptCat = false;
 @Output() sendToAdoptedList: EventEmitter<Cat> = new EventEmitter;
 addCatToAdoptedList(){
   this.sendToAdoptedList.emit(this.Cat)
